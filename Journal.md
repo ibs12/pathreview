@@ -17,15 +17,15 @@ The issue is faithfulness checker builds context from text from chunks and it cu
 
 ## Week 8 — Reproduction & solution planning
 
-**Reproduction commit link:** [link to commit documenting the reproduced issue]
+**Reproduction commit link:** [pending commit]
 
 **Reproduction summary:**
-[1–2 sentences: How did you reproduce the issue? What did you observe?]
+I reproduced the issue by running the faithfulness checker unit tests with a chunk whose text field is None. The current implementation raises a TypeError when it joins context chunks because it does not normalize None to an empty string before concatenation.
 
-**PLAN.md link:** [link to PLAN.md in your fork]
+**PLAN.md link:** [PLAN.md](PLAN.md)
 
-**Walkthrough video (recommended):** [link to your Loom video, ≤2 min — recommended, not graded]
+**Walkthrough video (recommended):** Not recorded yet.
 
 **Blockers or open questions:**
-[Anything you're still uncertain about going into Week 9, or leave blank]
+I am still confirming whether any other evaluator paths rely on chunk text being a non-None string before I move into the implementation phase.
 
