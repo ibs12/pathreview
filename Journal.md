@@ -46,7 +46,7 @@ The broader repository has existing lint/type issues outside this fix, so I am d
 
 ### Check-in 2 (end of week)
 
-**PR link:** [pending PR link]
+**PR link:** https://github.com/ascherj/pathreview/pull/542
 
 **Branch:** `fix/153-faithfulness-checker-crashes`
 
