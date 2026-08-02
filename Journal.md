@@ -17,7 +17,7 @@ The issue is faithfulness checker builds context from text from chunks and it cu
 
 ## Week 8 — Reproduction & solution planning
 
-**Reproduction commit link:** [pending commit]
+**Reproduction commit link:** https://github.com/ibs12/pathreview/commit/99bf412
 
 **Reproduction summary:**
 I reproduced the issue by running the faithfulness checker unit tests with a chunk whose text field is None. The current implementation raises a TypeError when it joins context chunks because it does not normalize None to an empty string before concatenation.
@@ -28,4 +28,35 @@ I reproduced the issue by running the faithfulness checker unit tests with a chu
 
 **Blockers or open questions:**
 I am still confirming whether any other evaluator paths rely on chunk text being a non-None string before I move into the implementation phase.
+
+## Week 9 — Solution building & PR submission
+
+### Check-in 1 (mid-week)
+
+**Current progress:**
+The None-handling fix is implemented in the faithfulness checker, and the targeted regression tests for None-valued chunk text are now passing locally.
+
+**Next steps:**
+I am validating the change against the repository’s standard checks and preparing the PR details and journal entry for submission.
+
+**Blockers:**
+The broader repository has existing lint/type issues outside this fix, so I am documenting that the targeted regression remains green while the project-wide check still reports unrelated failures.
+
+---
+
+### Check-in 2 (end of week)
+
+**PR link:** [pending PR link]
+
+**Branch:** `fix/153-faithfulness-checker-crashes`
+
+**What you built:**
+I updated the faithfulness checker to normalize `None` chunk text to an empty string before building the context string, so the evaluator no longer crashes on valid chunk objects with `text: None`.
+
+**Tests added or updated:**
+I added regression coverage in `tests/unit/test_faithfulness_checker.py` for None-valued chunk text and the missing-text-key case.
+
+**Self-review confirmation:** [ ] make check passes  [x] make test-unit passes
+
+**Draft PR feedback received from:** none
 
