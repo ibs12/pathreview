@@ -60,3 +60,34 @@ I added regression coverage in `tests/unit/test_faithfulness_checker.py` for Non
 
 **Draft PR feedback received from:** none
 
+## Week 10 — Iteration & reflection
+
+### Reviewer feedback
+
+**Feedback received:** [x] Yes  [ ] No — still awaiting review
+
+**Summary of feedback:**
+No reviewer feedback was provided for this submission in Summer 2026, so there was no external review to respond to.
+
+**How you responded:**
+No changes were needed based on reviewer feedback.
+
+---
+
+### Reflection
+
+**What was harder than you expected?**
+The hardest part was staying focused. The issue itself was small, but the repo had a lot of other problems around it, so it was easy to get pulled into unrelated stuff.
+
+**What did you learn about working in a large codebase?**
+I learned that contributing to someone else’s project is about being careful and keeping your change scoped. It is not just about fixing the bug; it is also about following the project’s patterns and not making the change bigger than it needs to be.
+
+**How did AI tools help — and where did they fall short?**
+AI helped me find the right part of the codebase and understand the bug faster. It was less helpful when I had to decide what to ignore and what to keep focused on, especially because there were other existing issues in the repo.
+
+**What would you do differently if you started over?**
+I would spend a little more time reading the surrounding tests and patterns before I changed anything. That would probably make the implementation step smoother and help me avoid getting distracted by unrelated issues.
+
+**What are you most proud of from this module?**
+I’m proud that I was able to reproduce the bug, fix it in a focused way, and finish the whole contribution process from planning to PR submission.
+
